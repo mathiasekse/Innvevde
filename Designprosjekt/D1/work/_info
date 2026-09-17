@@ -1,0 +1,92 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA/18.1
+Ed1_alu
+Z0 w1789652043
+Z1 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z4 dC:/Users/mathi/Documents/Innvevde/Innvevde/Designprosjekt/D1
+Z5 8C:/Users/mathi/Documents/Innvevde/Innvevde/Designprosjekt/D1/Designoving_1.vhd
+Z6 FC:/Users/mathi/Documents/Innvevde/Innvevde/Designprosjekt/D1/Designoving_1.vhd
+l0
+L6
+VCVF`oCK03meJfb3i5In]70
+!s100 VB_meJ3hYC4DUcD3mO1WG1
+Z7 OV;C;10.5b;63
+32
+Z8 !s110 1789654735
+!i10b 1
+Z9 !s108 1789654735.000000
+Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/mathi/Documents/Innvevde/Innvevde/Designprosjekt/D1/Designoving_1.vhd|
+Z11 !s107 C:/Users/mathi/Documents/Innvevde/Innvevde/Designprosjekt/D1/Designoving_1.vhd|
+!i113 1
+Z12 o-work work -2002 -explicit
+Z13 tExplicit 1 CvgOpt 0
+Artl
+R1
+R2
+R3
+DEx4 work 6 d1_alu 0 22 CVF`oCK03meJfb3i5In]70
+l37
+L17
+V]5dMmm7<o`0_AV53T3:6b2
+!s100 33IK7IaRGizYBkPL3_I]a1
+R7
+32
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Ed1_alu_tb
+Z14 w1789566214
+R1
+R2
+R3
+R4
+Z15 8C:/Users/mathi/Documents/Innvevde/Innvevde/Designprosjekt/D1/d1_alu_tb.vhd
+Z16 FC:/Users/mathi/Documents/Innvevde/Innvevde/Designprosjekt/D1/d1_alu_tb.vhd
+l0
+L5
+VKT1F>@A21:OjV4^f<GAeP2
+!s100 i0TeQ>I:SD[n<U?`LX<BJ0
+R7
+32
+Z17 !s110 1789654240
+!i10b 1
+Z18 !s108 1789654240.000000
+Z19 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/mathi/Documents/Innvevde/Innvevde/Designprosjekt/D1/d1_alu_tb.vhd|
+Z20 !s107 C:/Users/mathi/Documents/Innvevde/Innvevde/Designprosjekt/D1/d1_alu_tb.vhd|
+!i113 1
+R12
+R13
+Asimulationmodel
+R1
+R2
+R3
+DEx4 work 9 d1_alu_tb 0 22 KT1F>@A21:OjV4^f<GAeP2
+l45
+L10
+VZHh50:DnMPm:SlAaNgJk00
+!s100 E;0jZ7M8L;dSfAXa?CMeI3
+R7
+32
+R17
+!i10b 1
+R18
+R19
+R20
+!i113 1
+R12
+R13

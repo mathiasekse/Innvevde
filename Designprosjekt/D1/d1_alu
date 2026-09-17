@@ -31,8 +31,9 @@ architecture rtl of d1_alu is
   constant OP_DECA  : std_logic_vector(3 downto 0) := "1100";
   constant OP_DECB  : std_logic_vector(3 downto 0) := "1101";
   constant OP_ADD   : std_logic_vector(3 downto 0) := "1110";
-  -- constant OP_NONE  : std_logic_vector(3 downto 0) := "1111"; -- Overflødig ved bruk av (others => 0)
+  -- constant OP_NONE  : std_logic_vector(3 downto 0) := "1111"; -- OverflÃ¸dig ved bruk av (others => 0)
 
+  
 begin
   -- Tilegner logisk/aritmetisk funksjon til de ulike operasjonskodene
   with op_code select
@@ -51,5 +52,5 @@ begin
               std_logic_vector(unsigned(a) - 1)           when OP_DECA,
               std_logic_vector(unsigned(b) - 1)           when OP_DECB,
               std_logic_vector(unsigned(a) + unsigned(b)) when OP_ADD,
-              (others => 0)                               when others;
+              (others => '0')                               when others;
 end architecture rtl;

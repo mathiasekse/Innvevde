@@ -5,7 +5,7 @@ use ieee.numeric_std.all;
 
 entity d1_alu is
   generic (
-    NUM_BITS: integer := 3);
+    NUM_BITS: integer := 4);
   
   port (
     a, b:     in  std_logic_vector(NUM_BITS-1 downto 0);
