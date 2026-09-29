@@ -15,9 +15,12 @@ entity d2_counter is
 
 architecture rtl of d2_counter is
 
-  signal lfsr_reg : std_logic_vector(9 downto 0) := (0 => '1', others => '0');
-  signal bin_cnt  : std_logic_vector(9 downto 0) := (others => '0');
+  signal lfsr_reg  : std_logic_vector(9 downto 0) := (0 => '1', others => '0');
+  signal bin_cnt   : std_logic_vector(9 downto 0) := (others => '0');
+  signal clk_cnt   : unsigned(22 downto 0)        := (others => '0');
+  signal update_en : std_logic                    := '0';
   constant MAX_VAL : std_logic_vector(9 downto 0) := (others => '1');
+  
 
 begin
   -- Sekvensiell del
@@ -25,19 +28,31 @@ begin
   begin
 
     if rst = '0' then -- Aktivt lav
-      lfsr_reg <= (0 => '1', others => '0');
-      bin_cnt  <= (others => '0');
-      
-    elsif rising_edge(clk) then
-      if ena = '1' then
-        
-        if bin_cnt >= MAX_VAL then
-          bin_cnt <= (others => '0');
-        else
-          bin_cnt <= bin_cnt + 1;
-        end if;
+      lfsr_reg  <= (0 => '1', others => '0');
+      bin_cnt   <= (others => '0');
+      clk_cnt   <= (others => '0');
 
-        lfsr_reg <= lfsr_reg(8 downto 0) & (lfsr_reg(6) xor lfsr_reg(9)); -- Left-shift hvor LSB blir bit 7 xor bit 10
+
+    elsif rising_edge(clk) then
+
+      if ena = '1' then                       -- Kjøres kun hvis systemet er på (ena = 1)
+        
+        if clk_cnt = 4_999_999 then           -- Hvert 0.1 sekund
+
+          clk_cnt <= (others => '0');
+
+          if bin_cnt = (others => '1') then   -- Reset binærtelleren ved max verdi
+            bin_cnt <= (others => '0');
+          else
+            bin_cnt <= std_logic_vector(unsigned(bin_cnt) + 1); -- Inkrementer binærteller med 1
+          end if;
+          
+          lfsr_reg <= lfsr_reg(8 downto 0) & (lfsr_reg(6) xor lfsr_reg(9)); -- Inkrementer LFSR-teller (Venstreskift + xor på tappene)
+
+        else
+         clk_cnt <= clk_cnt + 1;
+        
+        end if;
 
       end if;
 
