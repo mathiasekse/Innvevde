@@ -52,5 +52,5 @@ begin
               std_logic_vector(unsigned(a) - 1)           when OP_DECA,
               std_logic_vector(unsigned(b) - 1)           when OP_DECB,
               std_logic_vector(unsigned(a) + unsigned(b)) when OP_ADD,
-              (others => '0')                               when others;
+              (others => '0')                             when others;
 end architecture rtl;
