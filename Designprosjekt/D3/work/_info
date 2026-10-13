@@ -1,0 +1,107 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/mathi/Documents/Innvevde/Innvevde/Designprosjekt/D2
+Ed3_sequence_detector
+Z0 w1791918117
+Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z2 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z3 dC:/Users/mathi/Documents/Innvevde/Innvevde/Designprosjekt/D3
+Z4 8C:/Users/mathi/Documents/Innvevde/Innvevde/Designprosjekt/D3/d3_sequence_detector.vhd
+Z5 FC:/Users/mathi/Documents/Innvevde/Innvevde/Designprosjekt/D3/d3_sequence_detector.vhd
+l0
+L4
+VHPfN=i]6@YaEJPME;LWMN3
+!s100 HNnEJn=L:C8?O@VW0:=SD0
+Z6 OV;C;10.5b;63
+32
+Z7 !s110 1791918129
+!i10b 1
+Z8 !s108 1791918129.000000
+Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/mathi/Documents/Innvevde/Innvevde/Designprosjekt/D3/d3_sequence_detector.vhd|
+Z10 !s107 C:/Users/mathi/Documents/Innvevde/Innvevde/Designprosjekt/D3/d3_sequence_detector.vhd|
+!i113 1
+Z11 o-work work -2002 -explicit
+Z12 tExplicit 1 CvgOpt 0
+Asr_rtl
+R1
+R2
+Z13 DEx4 work 20 d3_sequence_detector 0 22 HPfN=i]6@YaEJPME;LWMN3
+l93
+L89
+Z14 V`b`VmZRiB^5;WCLAKY6i=0
+Z15 !s100 ;6;bh8IWlCG?2^9g84Fd83
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Afsm_rtl
+R1
+R2
+R13
+l28
+L14
+V@]_C5z:XZeIK1jOOJD>O21
+!s100 XVLfM]P:G<ASnX:[oc`TY3
+R6
+32
+!s110 1791916665
+!i10b 1
+!s108 1791916665.000000
+R9
+R10
+!i113 1
+R11
+R12
+w1791916658
+Ed3_sequence_detector_tb
+Z16 w1791915482
+R1
+R2
+R3
+Z17 8C:/Users/mathi/Documents/Innvevde/Innvevde/Designprosjekt/D3/d3_sequence_detector_tb.vhd
+Z18 FC:/Users/mathi/Documents/Innvevde/Innvevde/Designprosjekt/D3/d3_sequence_detector_tb.vhd
+l0
+L8
+VXn<:46b9>DBcH9;aMCNHR1
+!s100 YnB7O`FFNBJXkKc<?1Mne1
+R6
+32
+R7
+!i10b 1
+R8
+Z19 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/mathi/Documents/Innvevde/Innvevde/Designprosjekt/D3/d3_sequence_detector_tb.vhd|
+Z20 !s107 C:/Users/mathi/Documents/Innvevde/Innvevde/Designprosjekt/D3/d3_sequence_detector_tb.vhd|
+!i113 1
+R11
+R12
+Asimulationmodel
+R1
+R2
+DEx4 work 23 d3_sequence_detector_tb 0 22 Xn<:46b9>DBcH9;aMCNHR1
+l49
+L12
+VdbllWfFA6JKYUUOCaSY?11
+!s100 W>QDO`:lGOcTOE_ShzXk;1
+R6
+32
+R7
+!i10b 1
+R8
+R19
+R20
+!i113 1
+R11
+R12

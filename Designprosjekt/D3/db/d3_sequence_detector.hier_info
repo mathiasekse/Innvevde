@@ -1,0 +1,13 @@
+|d3_sequence_detector
+clk => data_sequence[0].CLK
+clk => data_sequence[1].CLK
+clk => data_sequence[2].CLK
+clk => data_sequence[3].CLK
+rst => data_sequence[0].ACLR
+rst => data_sequence[1].ACLR
+rst => data_sequence[2].ACLR
+rst => data_sequence[3].ACLR
+data => data_sequence[0].DATAIN
+seq_found <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
