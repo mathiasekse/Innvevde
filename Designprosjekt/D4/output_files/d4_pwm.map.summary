@@ -1,0 +1,16 @@
+Analysis & Synthesis Status : Successful - Thu Oct 22 13:42:06 2026
+Quartus Prime Version : 25.1std.0 Build 1129 10/21/2025 SC Lite Edition
+Revision Name : d4_pwm
+Top-level Entity Name : d4_pwm
+Family : MAX 10
+Total logic elements : 8
+    Total combinational functions : 8
+    Dedicated logic registers : 6
+Total registers : 6
+Total pins : 6
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
+UFM blocks : 0
+ADC blocks : 0

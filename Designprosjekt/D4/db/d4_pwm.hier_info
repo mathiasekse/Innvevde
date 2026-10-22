@@ -1,0 +1,19 @@
+|d4_pwm
+clk => pwm_out~reg0.CLK
+clk => count[0].CLK
+clk => count[1].CLK
+clk => count[2].CLK
+clk => pre_cnt[0].CLK
+clk => pre_cnt[1].CLK
+rstn => pwm_out~reg0.ACLR
+rstn => count[0].ACLR
+rstn => count[1].ACLR
+rstn => count[2].ACLR
+rstn => pre_cnt[0].ACLR
+rstn => pre_cnt[1].ACLR
+duty[0] => LessThan0.IN3
+duty[1] => LessThan0.IN2
+duty[2] => LessThan0.IN1
+pwm_out <= pwm_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
