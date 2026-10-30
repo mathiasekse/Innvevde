@@ -23,7 +23,7 @@ architecture rtl of d5_safe is
   type digit_array is array (0 to 3) of integer range 0 to 9;
   signal digits : digit_array;
   constant secret : digit_array := (1, 2, 3, 4);
-  -- For beregning av synkende flanke på knappetrykk
+  -- For beregning av synkende flanke pï¿½ knappetrykk
   signal incr_prev : std_logic;
 
   -- 7 Segment Display coding
@@ -61,7 +61,7 @@ architecture rtl of d5_safe is
 begin
 
   p_main : process(clk, rst_n)
-    -- Variabel som holder styr på valgt 7-seg display fra arrayet
+    -- Variabel som holder styr pï¿½ valgt 7-seg display fra arrayet
     variable sel : integer range 0 to 3;
   begin
     if rst_n = '0' then
@@ -74,17 +74,16 @@ begin
       -- Ved trykk: overgang fra 1 til 0 (aktiv lav)
       if incr_prev = '1' and incr_key = '0' then
         if digits(sel) = 9 then
-          digits(sel) <= 0;     -- Begynner på nytt ved overflyt
+          digits(sel) <= 0;     -- Begynner pï¿½ nytt ved overflyt
         else
-          digits(sel) <= digits(sel) + 1; -- Øker tallet på gjeldende display
+          digits(sel) <= digits(sel) + 1; -- ï¿½ker tallet pï¿½ gjeldende display
         end if;
       end if;
     end if;
   end process p_main;
-
-  hex0 <= to_seven_seg(digits(0)) when sw9 = '1' else to_seven_seg(secret(0));
-  hex1 <= to_seven_seg(digits(1)) when sw9 = '1' else to_seven_seg(secret(1));
-  hex2 <= to_seven_seg(digits(2)) when sw9 = '1' else to_seven_seg(secret(2));
-  hex3 <= to_seven_seg(digits(3)) when sw9 = '1' else to_seven_seg(secret(3));
-  open_led <= '1' when digits = secret else '0';
+  hex0 <= to_seven_seg(digits(0)) when sw9 = '0' else to_seven_seg(secret(0));
+  hex1 <= to_seven_seg(digits(1)) when sw9 = '0' else to_seven_seg(secret(1));
+  hex2 <= to_seven_seg(digits(2)) when sw9 = '0' else to_seven_seg(secret(2));
+  hex3 <= to_seven_seg(digits(3)) when sw9 = '0' else to_seven_seg(secret(3));
+  open_led <= '1' when digits(0) = 1 and digits(1) = 2 and digits(2) = 3 and digits(3) = 4 and sw0 = '1' else '0';
 end architecture rtl;
