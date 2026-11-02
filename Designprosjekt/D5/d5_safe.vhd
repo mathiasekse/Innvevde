@@ -25,6 +25,8 @@ architecture rtl of d5_safe is
   constant secret : digit_array := (1, 2, 3, 4);
   -- For beregning av synkende flanke p� knappetrykk
   signal incr_prev : std_logic;
+  -- Tilstand for om safe er åpen
+  signal is_open : std_logic;
 
   -- 7 Segment Display coding
   constant SEG7_0 : std_logic_vector(7 downto 0) := "11000000";
@@ -65,8 +67,9 @@ begin
     variable sel : integer range 0 to 3;
   begin
     if rst_n = '0' then
-      digits <= (others => 0); -- Resetter alle display til tallet 0
+      digits    <= (others => 0); -- Resetter alle display til tallet 0
       incr_prev <= '1';
+      is_open   <= '1';
     elsif rising_edge(clk) then
       incr_prev <= incr_key;
       sel := to_integer(unsigned(seg_sel));
@@ -79,11 +82,21 @@ begin
           digits(sel) <= digits(sel) + 1; -- �ker tallet p� gjeldende display
         end if;
       end if;
+
+
+      -- Logikk for å låse/åpne safe
+      if sw0 = '1' then
+			is_open <= '0';
+      elsif digits = secret then
+        is_open <= '1';
+      end if;	
     end if;
   end process p_main;
+
   hex0 <= to_seven_seg(digits(0)) when sw9 = '0' else to_seven_seg(secret(0));
   hex1 <= to_seven_seg(digits(1)) when sw9 = '0' else to_seven_seg(secret(1));
   hex2 <= to_seven_seg(digits(2)) when sw9 = '0' else to_seven_seg(secret(2));
   hex3 <= to_seven_seg(digits(3)) when sw9 = '0' else to_seven_seg(secret(3));
-  open_led <= '1' when digits(0) = 1 and digits(1) = 2 and digits(2) = 3 and digits(3) = 4 and sw0 = '1' else '0';
+
+  open_led <= is_open;
 end architecture rtl;

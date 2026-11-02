@@ -120,19 +120,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "sw0",
-					"strict" : false
-				},
-				{
 					"name" : "sw9",
 					"strict" : false
 				},
 				{
-					"name" : "seg_sel[1]",
-					"strict" : false
-				},
-				{
-					"name" : "seg_sel[0]",
+					"name" : "sw0",
 					"strict" : false
 				},
 				{
@@ -141,6 +133,14 @@
 				},
 				{
 					"name" : "rst_n",
+					"strict" : false
+				},
+				{
+					"name" : "seg_sel[0]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_sel[1]",
 					"strict" : false
 				},
 				{

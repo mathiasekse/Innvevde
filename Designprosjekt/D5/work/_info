@@ -1,0 +1,92 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/mathi/Documents/Innvevde/Innvevde/Designprosjekt/D4
+Ed5_safe
+Z0 w1793617790
+Z1 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z4 dC:/Users/mathi/Documents/Innvevde/Innvevde/Designprosjekt/D5
+Z5 8C:/Users/mathi/Documents/Innvevde/Innvevde/Designprosjekt/D5/d5_safe.vhd
+Z6 FC:/Users/mathi/Documents/Innvevde/Innvevde/Designprosjekt/D5/d5_safe.vhd
+l0
+L6
+V7R@mV]0b>k_WGi=6NFnAV2
+!s100 h[VG`U;2C?eh;7kb8@[3I1
+Z7 OV;C;10.5b;63
+32
+Z8 !s110 1793617805
+!i10b 1
+Z9 !s108 1793617805.000000
+Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/mathi/Documents/Innvevde/Innvevde/Designprosjekt/D5/d5_safe.vhd|
+Z11 !s107 C:/Users/mathi/Documents/Innvevde/Innvevde/Designprosjekt/D5/d5_safe.vhd|
+!i113 1
+Z12 o-work work -2002 -explicit
+Z13 tExplicit 1 CvgOpt 0
+Artl
+R1
+R2
+R3
+DEx4 work 7 d5_safe 0 22 7R@mV]0b>k_WGi=6NFnAV2
+l63
+L21
+VUSho=<EQIhf:YV5YSNa8;2
+!s100 zhaaZ6gNZn=F>8`V?a?001
+R7
+32
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Ed5_safe_tb
+Z14 w1793370133
+R1
+R2
+R3
+R4
+Z15 8C:/Users/mathi/Documents/Innvevde/Innvevde/Designprosjekt/D5/d5_safe_tb.vhd
+Z16 FC:/Users/mathi/Documents/Innvevde/Innvevde/Designprosjekt/D5/d5_safe_tb.vhd
+l0
+L10
+VHeBG;gc_<YGU5beJK``jT2
+!s100 zin3A1XnaV1ilkN9RTg7]1
+R7
+32
+Z17 !s110 1793617806
+!i10b 1
+Z18 !s108 1793617806.000000
+Z19 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/mathi/Documents/Innvevde/Innvevde/Designprosjekt/D5/d5_safe_tb.vhd|
+Z20 !s107 C:/Users/mathi/Documents/Innvevde/Innvevde/Designprosjekt/D5/d5_safe_tb.vhd|
+!i113 1
+R12
+R13
+Asimulationmodel
+R1
+R2
+R3
+Z21 DEx4 work 10 d5_safe_tb 0 22 HeBG;gc_<YGU5beJK``jT2
+l78
+L14
+Z22 V=nz:6WEP6LIM;al`2fc8U0
+Z23 !s100 e>3hAL0g>2RYG=Mjk_3nF2
+R7
+32
+R17
+!i10b 1
+R18
+R19
+R20
+!i113 1
+R12
+R13

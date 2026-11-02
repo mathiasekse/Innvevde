@@ -1,12 +1,12 @@
-Analysis & Synthesis Status : Successful - Fri Oct 30 16:03:40 2026
+Analysis & Synthesis Status : Successful - Mon Nov  2 12:44:06 2026
 Quartus Prime Version : 25.1std.0 Build 1129 10/21/2025 SC Lite Edition
 Revision Name : d5_safe
 Top-level Entity Name : d5_safe
 Family : MAX 10
 Total logic elements : 78
     Total combinational functions : 66
-    Dedicated logic registers : 17
-Total registers : 17
+    Dedicated logic registers : 18
+Total registers : 18
 Total pins : 40
 Total virtual pins : 0
 Total memory bits : 0
